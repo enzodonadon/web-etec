@@ -1,0 +1,19 @@
+a {
+    display: inline-block;
+    background-color: black;
+    margin: 10%;
+    padding: 20px;
+    color: azure;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: rgb(63, 123, 123);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+/*animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];*/
