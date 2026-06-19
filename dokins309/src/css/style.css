@@ -12,7 +12,6 @@ body {
   background-color: #0a0f1e;
   color: #e8dbb5;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   overflow-x: auto;
 }
 
@@ -119,7 +118,6 @@ nav ul li a:hover {
 .hero-subtitulo {
   font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
-  font-weight: 300;
   font-style: italic;
   color: #9a8a6a;
   letter-spacing: 2px;
@@ -267,7 +265,6 @@ section {
   font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
   color: #b8962e;
-  font-weight: 300;
 }
 
 .horario-fechado .horario-hora {
@@ -326,7 +323,6 @@ section {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px;
   color: #b8962e;
-  font-weight: 300;
 }
 
 .servico-preco span {
@@ -373,7 +369,6 @@ section {
   font-family: 'Cormorant Garamond', serif;
   font-size: 72px;
   color: #423c26;
-  font-weight: 300;
 }
 
 .equipe-card h3 {
@@ -541,6 +536,8 @@ footer section {
 }
 
 /*
+  cores
+
   #b8962e - dourado
   #0a0f1e - fundo escuro
   #0b132b - fundo médio    
@@ -548,4 +545,18 @@ footer section {
   #9a8a6a - texto médio  
   #5a4a2a - texto rodapé/+-apagado    
   #423c26 - borda   
-*/
+
+  font weight
+
+  100 - Thin (Hairline)
+  200 - Extra Light
+  300 - Light
+  400 - Normal (Regular)
+  500 - Medium
+  600 - Semi Bold
+  700 - Bold
+  800 - Extra Bold
+  900 - Black (Heavy)
+
+  animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+/*
