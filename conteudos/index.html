@@ -8,11 +8,20 @@
 </head>
 <body>
     <h1 id='title'>HTML DOM</h1>
+    <div id="principal"></div>
     <script>
         const title2 = document.getElementById('title');
         const nome = Enzo;
-        title2.textContent = 'New "Title"';
-        title2.innerHTML = `<b>Sou <spam class="italico-vermelho">${nome}</spam></b>`;
+        const divPrincipal = document.getElementById('principal')
+
+        title2.textContent = 'New "Title"'; //texto basico
+        title2.innerHTML = `<b>Sou <spam class="italico-vermelho">${nome}</spam></b>`; //html 
+        title2.style.color = '#ff0000';
+        title2.style.fontSize = '1.5rem';
+
+        const p1 = document.createElement('p');
+        p1.textContent = 'Sou um paragrafo';
+        divPrincipal.appendChild(p1);
 
     </script>
 </body>
