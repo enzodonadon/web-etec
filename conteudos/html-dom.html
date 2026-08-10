@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html-dom.css">
+</head>
+<body>
+    <h1 id='title'>HTML DOM</h1>
+    <div id="principal"></div>
+    <script>
+        const title2 = document.getElementById('title');
+        const nome = Enzo;
+
+        //title2.textContent = 'New "Title"'; => texto basico
+        title2.innerHTML = `<b>Sou <spam class="italico-vermelho">${nome}</spam></b>`; 
+        //html + quebra de linha
+        title2.style.color = '#ff0000';
+        title2.style.fontSize = '1.5rem';
+
+        /*
+        divPrincipal.appendChild(p1);*/
+        const divPrincipal = document.getElementById('principal');
+        divPrincipal = `<h1>Olá, ${nome}</h1>!`
+        
+        const p_principal = document.createElement('p'); //cria o elemento
+        p_principal.textContent = 'Elemento "p" criado.'; //texto do elemento
+        p_principal.setAttribute = (id, p_principal); //add or modify value of an attribute
+    </script>
+</body>
+</html>
