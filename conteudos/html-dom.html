@@ -8,9 +8,11 @@
 </head>
 <body>
     <h1 id='title'>HTML DOM</h1>
-    <div id="principal"></div>
+    <div id="principal">
+        <h2>h2 da Div</h2>
+    </div>
     <script>
-        const title2 = document.getElementById('title');
+        const title2 = document.getElementById('title'); //pega o elemento pelo id
         const nome = Enzo;
 
         //title2.textContent = 'New "Title"'; => texto basico
@@ -22,7 +24,7 @@
         /*
         divPrincipal.appendChild(p1);*/
         const divPrincipal = document.getElementById('principal');
-        divPrincipal = `<h1>Olá, ${nome}</h1>!`
+        divPrincipal.innerHTML = `<h1>Olá, ${nome}</h1>!`;
         
         const p_principal = document.createElement('p'); //cria o elemento
         p_principal.textContent = 'Elemento "p" criado.'; //texto do elemento
