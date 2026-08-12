@@ -1,3 +1,26 @@
-#divAdd {
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+main {
+    padding: 10px;
+}
+
+#div-principal {
+    width: 90vw;
+    height: 50vh;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divAdd {
+    width: 20vw;
+    height: 5vh;
     border: 1px solid black;
 }

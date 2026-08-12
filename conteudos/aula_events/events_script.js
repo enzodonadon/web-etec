@@ -5,9 +5,10 @@ var cont = 0;
 
 function add_card(){
     let divAdd = document.createElement('div');
-    divAdd.innerHTML = `Div ${cont} criada.`
-    divAdd.setAttribute = (id, 'divAdd');  
-    divAdd = document.getElementById('')
-     
+    
+    divAdd.setAttribute('class', 'divAdd');
+    divAdd.textContent = `Div ${cont + 1} criada.`;
+    
+    document.getElementById('div-principal').appendChild(divAdd); // insere no container existente; ultimo da lista
     cont += 1;
 }
