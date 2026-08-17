@@ -1,0 +1,13 @@
+.login-form {
+    border: 1px solid black;
+    width: 40vw;   
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.input-group{
+    
+}
