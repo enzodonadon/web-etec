@@ -1,13 +1,36 @@
-.login-form {
-    border: 1px solid black;
-    width: 40vw;   
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.input-group{
-    
+.login-form {
+    background: linear-gradient(150deg,rgb(53, 38, 78), purple);
+    color: rgb(241, 245, 226);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;   
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.login-title, 
+.input-group,
+.login-btn{
+    margin: 15px 0;
+}
+
+.login-title {
+    font-size: 20px;
+}
+
+.input-field {
+    background-color: rgb(216, 208, 198);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    height: 30px;
+    margin: 0 10px;
 }
