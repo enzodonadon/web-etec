@@ -18,8 +18,29 @@
                 <label for="password" class="input-label">Senha</label>
                 <input type="password" id="fpassword" class="input-field" placeholder="Sua senha" required>
             </div>
+            <div class="input-group">
+                <select name="user_type" id="user_type" class="input-field" >
+                    <option value="A">Aluno</option>
+                    <option value="P">Professor</option>
+                    <option value="AD">Administrador</option>
+                    <option value="C">Coordenador</option>
+                    
+                </select>
+            </div>
+            <!--<div class="input-group">
+                <select name="user_gender" id="user_gender" class="input-field" >
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Prefiro não informar</option>
+                </select>
+            </div>-->
             <button type="submit" class="login-btn" onclick="efetuar_login()">Entrar</button>
+            <!--<input type="hidden" name="productId" value="98765">-->
         </form>
+        <div id="mensagemBemVindo" style="display: none;">
+            🎉 Bem-vindo ao sistema!
+        </div>
+        
     </main>
     <script src="form.js"></script>
 </body>
