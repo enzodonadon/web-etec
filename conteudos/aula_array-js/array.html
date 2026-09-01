@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="array.css">
+</head>
+<body>
+    <main>
+        <h1>Catálogo de Produtos</h1>
+        <ul id="catalog"></ul>
+    </main>
+    
+    <script>
+        const notebooks = [
+            ["Samsung", "Galaxy Book4", "Core i5, 8GB RAM, SSD 512GB", "R$ 3.300"],
+            ["Lenovo", "IdeaPad Slim 3", "Core i5, 8GB RAM, SSD 512GB", "R$ 3.100"],
+            ["ASUS", "Vivobook 15", "Core i5, 8GB RAM, SSD 512GB", "R$ 3.000"],
+            ["Acer", "Aspire 5", "Core i5, 8GB RAM, SSD 256GB", "R$ 2.800"],
+            ["Dell", "Inspiron 15", "Core i5, 8GB RAM, SSD 512GB", "R$ 3.400"],
+            ["VAIO", "FE16", "Core i5, 16GB RAM, SSD 512GB", "R$ 3.200"],
+            ["Apple", "MacBook Air M2", "Chip M2, 8GB RAM, SSD 256GB", "R$ 6.800"]
+        ];
+
+        const catalogo = document.querySelector('#catalog');
+        for (let i = 0; i < notebooks.length; i++) {
+            const marca = notebooks[i][0];
+            const modelo = notebooks[i][1];
+            const specs = notebooks[i][2];
+            const preco = notebooks[i][3];
+
+            const item = document.createElement('li');
+            item.innerHTML = `<strong>${marca}</strong> <br> ${modelo} <br> ${preco}`; 
+            catalogo.appendChild(item);
+            item.setAttribute('class', 'item');
+        }
+    </script>
+</body>
+</html>
