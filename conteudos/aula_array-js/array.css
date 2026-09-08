@@ -4,6 +4,10 @@
     box-sizing: border-box; 
 }
 
+main {
+    margin: 0 20px;
+}
+
 #catalog {
     list-style-type: none;
     display: flex;
@@ -12,12 +16,17 @@
 
 .item {
     display: inline-block;
-    width: 15vw;
+    min-width: 15vw;
     margin: 20px;
     padding: 10px;
     border: 2px solid purple;
+    border-radius: 7px;
     text-align: center;
     justify-content: center;
     align-items: center;
     line-height: 1.5;
+}
+
+.btn-search:hover {
+    cursor: pointer;
 }
