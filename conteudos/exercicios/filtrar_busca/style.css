@@ -6,10 +6,37 @@
 
 main {
     margin: 0 20px;
-
 }
 
-#catalog {
+.title {
+    text-align: center;
+    margin: 10px;
+}
+
+.container-principal {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.filter-container {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    max-width: 150px;
+    height: fit-content;
+    align-items: start;
+}
+
+.filter-form-item {
+    display: inline-block;
+    width: 150px;
+    margin: 5px 0;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+}
+.catalog {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
@@ -34,23 +61,5 @@ main {
 .product-info {
     display: inline-block;
     margin: 2% 0;
-
 }
 
-form {
-    display: flex;
-    flex-flow: column wrap;
-    border: 1px solid black;
-    width: 20%;
-    align-items: start;
-}
-
-.form-item {
-    display: inline-block;
-    width: fit-content;
-    margin: 5px 0;
-}
-
-.btn-search:hover {
-    cursor: pointer;
-}

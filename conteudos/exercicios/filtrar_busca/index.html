@@ -8,14 +8,20 @@
 </head>
 <body>
     <main>
-        <section>
-            <h1>Catálogo de Produtos</h1>
-            <form action="" method="get">
-                <label for="fsearch" class="form-item">Pesquisar</label>
-                <input type="search" name="q" id="fsearch" placeholder="ex: notebook" class="form-item">
-                <button type="submit" class="btn-search form-item">Buscar</button>
-            </form>
-            <ul id="catalog"></ul>
+        <section class="catalog-page">
+            <h1 class="title">Catálogo de Produtos</h1>
+            <div class="container-principal">
+                <article class="filter-container">
+                    <form action="" method="get">
+                        <label for="fsearch" class="filter-form-item">Pesquisar</label>
+                        <input type="search" name="q" id="fsearch" placeholder="ex: notebook" class="filter-form-item">
+                        <button type="submit" class="btn-search filter-form-item">Buscar</button>
+                    </form>
+                </article>
+                <article class="catalog-container">
+                    <ul id="catalog" class="catalog"></ul>
+                </article>
+            </div>
         </section>
     </main>
 
