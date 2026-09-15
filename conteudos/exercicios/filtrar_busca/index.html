@@ -11,9 +11,9 @@
         <section>
             <h1>Catálogo de Produtos</h1>
             <form action="" method="get">
-                <label for="fsearch">Pesquisar</label>
-                <input type="search" name="q" id="fsearch" placeholder="ex: notebook">
-                <button type="submit" class="btn-search">Buscar</button>
+                <label for="fsearch" class="form-item">Pesquisar</label>
+                <input type="search" name="q" id="fsearch" placeholder="ex: notebook" class="form-item">
+                <button type="submit" class="btn-search form-item">Buscar</button>
             </form>
             <ul id="catalog"></ul>
         </section>
@@ -62,7 +62,7 @@
                 const preco = lista[i][3];
 
                 const item = document.createElement('li');
-                item.innerHTML = `<strong>${marca}</strong> <br> ${modelo} <br> ${preco}`;
+                item.innerHTML = `<strong><h3 class="product-info">${marca}</h3></strong> <br><p class="product-info">${modelo}</p><br> <p class="product-info">${preco}</p>`;
                 item.setAttribute('class', 'item');
                 catalogo.appendChild(item);
             }
