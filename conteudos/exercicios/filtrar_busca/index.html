@@ -66,9 +66,10 @@
                 const modelo = lista[i][1];
                 const specs = lista[i][2];
                 const preco = lista[i][3];
+                const image = lista[i][5];
 
                 const item = document.createElement('li');
-                item.innerHTML = `<strong><h3 class="product-info">${marca}</h3></strong> <br><p class="product-info">${modelo}</p><br> <p class="product-info">${preco}</p>`;
+                item.innerHTML = `${image}<strong><h3 class="product-info">${marca}</h3></strong> <br><p class="product-info">${modelo}</p><br> <p class="product-info">${preco}</p>`;
                 item.setAttribute('class', 'item');
                 catalogo.appendChild(item);
             }
