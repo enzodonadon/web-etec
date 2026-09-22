@@ -46,7 +46,7 @@ main {
 .item {
     display: inline-block;
     width: 15vw;
-    height: 20vh;
+    height: 40vh;
     margin: 20px;
     padding: 10px;
     border: 2px solid purple;
@@ -60,6 +60,11 @@ main {
 
 .product-info {
     display: inline-block;
-    margin: 2% 0;
+    margin: 2px 0;
+}
+
+.product-image {
+    max-width: 80px;
+    max-width: 100px;
 }
 
