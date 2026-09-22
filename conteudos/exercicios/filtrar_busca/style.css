@@ -44,7 +44,8 @@ main {
 }
 
 .item {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 15vw;
     height: 40vh;
     margin: 20px;
@@ -52,8 +53,6 @@ main {
     border: 2px solid purple;
     border-radius: 7px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     line-height: 1.5;
     overflow: hidden;
 }
@@ -65,6 +64,15 @@ main {
 
 .product-image {
     max-width: 80px;
-    max-width: 100px;
+    max-height: 80px;
 }
+
+.top-box-item,
+.bottom-box-item {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
 
