@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -100,11 +100,36 @@ button:hover {
 }   
 
 .catalog {
-    max-width: 900px;
+    max-width: 1200px;
     display: flex;
     flex-flow: row wrap;
+    list-style: none;
 }
 
+.item {
+    width: 30%;
+    height: 400px;
+    margin: 0 10px 30px 10px;
+    transition: ease-in 0.1s;
+}
 
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.top-box-item {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+.product-tipo {
+    display: block;
+    width: 20px;
+}
+
+.product-image {
+    max-height: 200px;
+}
 
 

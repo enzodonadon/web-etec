@@ -66,18 +66,20 @@
                 const modelo = lista[i][1];
                 const specs = lista[i][2];
                 const preco = lista[i][3];
+                const tipo = lista[i][4];
                 const image_url = lista[i][5];
 
                 const item = document.createElement('li');
                 item.innerHTML = `  <div class="top-box-item">
+                                        <div class="product-tipo">${tipo}</div>
                                         <img src="${image_url}" class="product-image">
-                                        <br> 
                                     </div>   
                                     <div class="line-box-item"></div>
                                     <div class="bottom-box-item">
-                                        <p class="product-info">${marca}</p>
-                                        <strong><h3 class="product-info product-title">${modelo}</h3></strong>
-                                        <p class="product-info">${preco}</p>
+                                        <p class="product-info product-marca">${marca}</p>
+                                        <strong><h3 class="product-info product-modelo">${modelo}</h3></strong>
+                                        <p class="product-info product-specs">${specs}<p>
+                                        <p class="product-info product-preco">${preco}</p>
                                         <button class="btn-comprar-item product-info">Comprar</button>
                                     </div>`;
                 item.setAttribute('class', 'item card');
