@@ -4,75 +4,107 @@
     box-sizing: border-box; 
 }
 
+:root {
+    --cor-principal: rgb(133, 0, 249);
+    --cor-secundaria: rgb(185, 81, 255);
+    --background: rgb(245, 236, 250);
+    --text: rgb(30, 30, 30);
+    --card-border: rgb(223, 223, 223);
+    --shadow: rgb(198, 198, 198);
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text);
+}
+
 main {
-    margin: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .title {
-    text-align: center;
-    margin: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-.container-principal {
+.catalog-page {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly ;
+    align-items: flex-start;
+}
+
+.card {
+    padding: 10px;
+    border: solid 1px var(--card-border);
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 var(--shadow);
 }
 
 .filter-container {
+    max-width: 200px;
+    height: 120px;
+}
+
+.filter {
     display: flex;
-    flex-flow: column wrap;
-    border: 1px solid black;
-    max-width: 150px;
-    height: fit-content;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter-form-item {
     display: inline-block;
-    width: 150px;
-    margin: 5px 0;
+    height: 30px;
+    width: 100%;
+    margin: 2px auto;
 }
 
-.btn-search:hover {
-    cursor: pointer;
+.pesquisar {
+    font-weight: 600;
 }
+
+.filter-input {
+    border: 1px solid var(--cor-principal);
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.filter-input:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: none;
+}
+
+button {
+    font-weight: 700;
+    background-color: var(--cor-principal);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: ease 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}   
+
 .catalog {
-    list-style-type: none;
+    max-width: 900px;
     display: flex;
     flex-flow: row wrap;
-    margin: 0 10% auto;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-    height: 40vh;
-    margin: 20px;
-    padding: 10px;
-    border: 2px solid purple;
-    border-radius: 7px;
-    text-align: center;
-    line-height: 1.5;
-    overflow: hidden;
-}
 
-.product-info {
-    display: inline-block;
-    margin: 2px 0;
-}
-
-.product-image {
-    max-width: 80px;
-    max-height: 80px;
-}
-
-.top-box-item,
-.bottom-box-item {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-}
 
 

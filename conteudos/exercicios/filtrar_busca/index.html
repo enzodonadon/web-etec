@@ -10,11 +10,11 @@
     <main>
         <section class="catalog-page">
             <h1 class="title">Catálogo de Produtos</h1>
-            <div class="container-principal">
-                <article class="filter-container">
-                    <form action="" method="get">
-                        <label for="fsearch" class="filter-form-item">Pesquisar</label>
-                        <input type="search" name="q" id="fsearch" placeholder="ex: notebook" class="filter-form-item">
+            <div class="principal-container">
+                <article class="filter-container card">
+                    <form action="" method="get" class="filter">
+                        <label for="fsearch" class="filter-form-item pesquisar">Pesquisar</label>
+                        <input type="search" name="q" id="fsearch" placeholder="ex: notebook" class="filter-form-item filter-input">
                         <button type="submit" class="btn-search filter-form-item">Buscar</button>
                     </form>
                 </article>
@@ -73,13 +73,14 @@
                                         <img src="${image_url}" class="product-image">
                                         <br> 
                                     </div>   
+                                    <div class="line-box-item"></div>
                                     <div class="bottom-box-item">
-                                        <strong><h3 class="product-info product-title">${modelo}</h3></strong>
-                                        <br>
                                         <p class="product-info">${marca}</p>
-                                        <br>
-                                        <p class="product-info">${preco}</p>`;
-                item.setAttribute('class', 'item');
+                                        <strong><h3 class="product-info product-title">${modelo}</h3></strong>
+                                        <p class="product-info">${preco}</p>
+                                        <button class="btn-comprar-item product-info">Comprar</button>
+                                    </div>`;
+                item.setAttribute('class', 'item card');
                 catalogo.appendChild(item);
             }
         }
